@@ -7,47 +7,47 @@ software=(
 	wget
 	bash-completion
 	htop
-    cmatrix
-    zsh
+    	cmatrix
+    	zsh
 	neofetch
-    figlet
+    	figlet
 	tmux
 	vim
-    zip
-    mc
+    	zip
+    	mc
 	unzip
 	7z
 
-    # Programming
-    php
-    npm
-    python3
+    	# Programming
+    	php
+    	npm
+    	python3
 	gcc
-    make
+ 	make
 
     
-    # Desktop application
+    	# Desktop application
 	firefox
 	chromium
 	filezilla
-    code
-    thunderbird
-    telegram-desktop
-    keepassxc
-    qbittorrent
-    virtualbox
-    veracrypt
-    kleopatra
-    vlc
-    galculator
-    virtualbox
-    virtualbox-host-modules-arch
+    	code
+    	thunderbird
+    	telegram-desktop
+    	keepassxc
+    	qbittorrent
+    	virtualbox
+    	veracrypt
+    	kleopatra
+    	vlc
+    	galculator
+    	virtualbox
+    	virtualbox-host-modules-arch
 )
 
 
 if [ `id -u` -eq 0 ]
 then
-    pacman -Suy
+    	pacman -Suy
 	for soft in "${software[@]}"
 	do
         figlet $soft
