@@ -1,6 +1,9 @@
 #! /usr/bin/env bash
 
 xfce4=(
+    xfce4
+    xfce4-goodies
+    gvfs
     lightdm
     lightdm-gtk-greeter
     lightdm-gtk-greeter-settings
