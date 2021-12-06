@@ -15,6 +15,7 @@ then
     do
         sudo pacman -S $soft
     done
+    systemctl enable lightdm
 else
     echo "Need root permission"
 fi
