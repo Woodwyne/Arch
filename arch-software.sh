@@ -3,45 +3,44 @@
 
 software=(
 	# System utility
-	curl
-	wget
-	bash-completion
-	htop
-    	cmatrix
-    	zsh
-	neofetch
-    	figlet
-	tmux
-	vim
-    	zip
-    	mc
-	unzip
-	7z
+	  curl
+	  wget
+	  bash-completion
+	  htop
+    cmatrix
+    zsh
+    neofetch
+    figlet
+	  tmux
+	  vim
+    zip
+    mc
+	  unzip
+	  7z
 
-    	# Programming
-    	php
-    	npm
-    	python3
-	gcc
- 	make
+    # Programming
+    php
+    npm
+    python3
+    gcc
+    make
 
-    
-    	# Desktop application
-	firefox
-	chromium
-	filezilla
-    	code
-    	thunderbird
-    	telegram-desktop
-    	keepassxc
-    	qbittorrent
-    	virtualbox
-    	veracrypt
-    	kleopatra
-    	vlc
-    	galculator
-    	virtualbox
-    	virtualbox-host-modules-arch
+    # Desktop application
+    firefox
+	  chromium
+	  filezilla
+    code
+    thunderbird
+    telegram-desktop
+    keepassxc
+    qbittorrent
+    virtualbox
+    veracrypt
+    kleopatra
+    vlc
+    galculator
+    virtualbox
+    virtualbox-host-modules-arch
 )
 
 
