@@ -1,6 +1,7 @@
 #! /usr/bin/env bash
 
 network=(
+  dnsutils
 	wpa_suplication,
 	dialog
 	networkmanager
@@ -10,6 +11,8 @@ network=(
 	network-manager-applet
 	dhclient
 	libsecret
+  nmap
+  net-tools
 )
 if [ `id -u` -eq 0 ]
 then
