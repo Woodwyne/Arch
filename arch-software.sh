@@ -2,7 +2,7 @@
 
 
 software=(
-	# System utility
+	  # System utility
 	  curl
 	  wget
 	  bash-completion
