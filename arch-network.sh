@@ -12,6 +12,7 @@ network=(
 	dhclient
 	libsecret
   nmap
+  wireshark
   net-tools
 )
 if [ `id -u` -eq 0 ]
