@@ -7,7 +7,10 @@ then
 fi
 
 echo "[+] Start update"
+echo "[+] Update package and repository"
 sudo pacman -Suyy --noconfirm --needed # Update package and repository
+echo "[+] Removing all orphaned packages"
 sudo pacman -Qqdt --noconfirm  # Removing all orphaned packages 
+echo "[+] Clearing the package cache"
 sudo pacman -Scc --noconfirm   # Clearing the package cache 
 echo "[+] End script"

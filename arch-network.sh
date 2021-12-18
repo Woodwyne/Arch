@@ -2,34 +2,32 @@
 
 network=(
   dnsutils
-	wpa_suplication,
 	dialog
 	networkmanager
 	openvpn
 	network-manager-applet
-	network-manager-vpnc
 	network-manager-applet
 	dhclient
 	libsecret
-  nmap
-  wireshark
   net-tools
 )
-if [ `id -u` -eq 0 ]
+if [ `id -u` -ne 0 ]
 then
-    sudo pacman -Suuy
-    for app in ${network[@]}
-    do
-        sudo pacman -S $app --noconfirm --needed
-    done
+    echo "[-] Need root permission"
+    exit
+fi
+
+sudo pacman -Suuy
+
+for app in ${network[@]}
+do
+    sudo pacman -S $app --noconfirm --needed
+done
+
+sudo systemctl restart NetworkManager
+if [ "$?" -eq 0 ]
+then
+    echo "[+] Install done"
 else
-echo "
-
-
-
-
-
-
-"
-
+    echo "[-] Install error"
 fi

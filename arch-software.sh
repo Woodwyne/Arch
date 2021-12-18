@@ -44,14 +44,21 @@ software=(
 )
 
 
-if [ `id -u` -eq 0 ]
+if [ `id -u` -ne 0 ]
 then
-    	pacman -Suy
-	for soft in "${software[@]}"
-	do
-        figlet $soft
-    	pacman -S $soft  --needed
-	done
+    echo "[-] Need root permission"
+    exit 1
+fi
+sudo pacman -Suy
+for soft in "${software[@]}"
+do
+    figlet $soft
+    pacman -S $soft  --needed
+done
+
+if [ "$?" -eq 0 ]
+then
+    echo "[+] Install done without error"
 else
-    echo "NEED ROOT PERMISSION"
+    echo "[-] Error install"
 fi
