@@ -12,7 +12,6 @@ audio=(
 )
 
 # Check root permission
-
 if [ `id -u` -ne 0 ]
 then
     echo "[-] Need root permission"

@@ -37,7 +37,8 @@ software=(
     virtualbox
     veracrypt
     kleopatra
-    vlc
+    vlc # Video player
+    evince # PDF reader
     galculator
     virtualbox
     virtualbox-host-modules-arch
