@@ -1,2 +1,2 @@
 # Arch
-ArchLinux script before install system
+ArchLinux script after install system
