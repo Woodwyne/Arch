@@ -1,15 +1,15 @@
 #! /usr/bin/env bash
 
 network=(
-  dnsutils
-	dialog
-	networkmanager
+  	dnsutils
+  	dialog
+  	networkmanager
 	openvpn
 	network-manager-applet
 	network-manager-applet
 	dhclient
 	libsecret
-  net-tools
+  	net-tools
 )
 if [ `id -u` -ne 0 ]
 then
