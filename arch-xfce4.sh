@@ -17,6 +17,6 @@ fi
 
 for soft in "${xfce4[@]}"
 do
-    sudo pacman -S $soft
+    sudo pacman -S $soft --noconfirm --needed
 done
-sudo  systemctl enable lightdm
+sudo systemctl enable lightdm

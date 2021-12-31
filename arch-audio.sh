@@ -2,6 +2,7 @@
 
 # Audio drivers and pluggin for Arch linux
 # Array with software
+
 audio=(
     alsa-utils        
     alsa-plugins    

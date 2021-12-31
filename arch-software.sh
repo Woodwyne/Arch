@@ -2,23 +2,23 @@
 
 
 software=(
-	  # System utility
-	  curl
-	  wget
-	  bash-completion
-	  htop
+    # System utility 
+    curl
+    wget
+    bash-completion
+    htop
     cmatrix
     zsh
     neofetch
     figlet
-	  tmux
-	  vim
+    tmux
+    vim
     zip
-    mc
-	  unzip
-	  7z
+    nnn
+    ranger
+    unzip
 
-    # Programming
+    # Developed   
     php
     npm
     python3
@@ -26,9 +26,10 @@ software=(
     make
 
     # Desktop application
+    xarchiver	
     firefox
-	  chromium
-	  filezilla
+    chromium
+    filezilla
     code
     thunderbird
     telegram-desktop
@@ -37,11 +38,29 @@ software=(
     virtualbox
     veracrypt
     kleopatra
-    vlc # Video player
-    evince # PDF reader
+    vlc 	# Video player
+    evince 	# PDF reader
     galculator
     virtualbox
     virtualbox-host-modules-arch
+
+    # Codecs and plugins
+    a52dec
+    faac
+    faad2
+    flac
+    jasper
+    lame
+    libdca
+    libdv
+    libmad
+    libmpeg2
+    libtheora
+    libvorbis
+    libxv
+    wavpack
+    x264
+    xvidcore
 )
 
 
@@ -54,7 +73,7 @@ sudo pacman -Suy
 for soft in "${software[@]}"
 do
     figlet $soft
-    pacman -S $soft  --needed
+    pacman -S $soft  --needed --noconfirm
 done
 
 if [ "$?" -eq 0 ]
